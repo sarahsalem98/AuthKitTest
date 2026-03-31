@@ -8,24 +8,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthKitTest.Api.Auth;
 
-public class AdminRegisterStrategy : IRegisterStrategy<AppUser, AdminRegisterModel>
+public class VendorRegisterStrategy : IRegisterStrategy<AppUser, VendorRegisterModel>
 {
     private readonly AppDbContext _db;
-    private readonly AdminPortalPolicy _portal;
+    private readonly VendorPortalPolicy _portal;
 
-    public AdminRegisterStrategy(AppDbContext db, AdminPortalPolicy portal)
+    public VendorRegisterStrategy(AppDbContext db, VendorPortalPolicy portal)
     {
         _db     = db;
         _portal = portal;
     }
 
-    public async Task<AppUser> CreateAsync(AdminRegisterModel model, CancellationToken ct)
+    public async Task<AppUser> CreateAsync(VendorRegisterModel model, CancellationToken ct)
     {
         if (await _db.Users.AnyAsync(u => u.Email == model.Email, ct))
             throw new AuthException(AuthErrorCode.UserAlreadyExists, "This email is already registered.");
 
-        var role = await _db.Roles.FirstOrDefaultAsync(r => r.Name == "Admin", ct)
-            ?? throw new InvalidOperationException("Role 'Admin' not found. Run seed first.");
+        var role = await _db.Roles.FirstOrDefaultAsync(r => r.Name == "VendorSupplier", ct)
+            ?? throw new InvalidOperationException("Role 'VendorSupplier' not found. Run seed first.");
 
         var basePermissions = await _db.Permissions
             .Where(p => _portal.AllowedPermissions.Contains(p.Name))
