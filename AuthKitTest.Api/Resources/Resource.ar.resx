@@ -117,6 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AuthKit.Auth.InvalidCredentials" xml:space="preserve">
+    <value>بيانات الاعتماد غير صحيحة</value>
+  </data>
+  <data name="AuthKit.Auth.InvalidCredentialsDetails" xml:space="preserve">
+    <value>البريد الإلكتروني أو كلمة المرور المُدخلة غير صحيحة</value>
+  </data>
+  <data name="AuthKit.Auth.PermissionRequired" xml:space="preserve">
+    <value>الصلاحية '{0}' مطلوبة للوصول إلى هذا المورد.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalAccessRestricted" xml:space="preserve">
+    <value>هذا المورد متاح فقط من بوابة '{0}'.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalNotConfigured" xml:space="preserve">
+    <value>البوابة '{0}' غير مُهيأة.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalPermissionNotAllowed" xml:space="preserve">
+    <value>حسابك لا يمتلك الصلاحيات المطلوبة للوصول إلى هذه البوابة.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalRoleNotAllowed" xml:space="preserve">
+    <value>حسابك لا يمتلك الدور المطلوب للوصول إلى هذه البوابة.</value>
+  </data>
+  <data name="AuthKit.Auth.RefreshTokenExpired" xml:space="preserve">
+    <value>انتهت صلاحية رمز التحديث.</value>
+  </data>
+  <data name="AuthKit.Auth.RefreshTokenInvalid" xml:space="preserve">
+    <value>رمز التحديث غير صالح.</value>
+  </data>
+  <data name="AuthKit.Auth.RefreshTokenRevoked" xml:space="preserve">
+    <value>تم إلغاء رمز التحديث.</value>
+  </data>
+  <data name="AuthKit.Auth.RoleRequiredAll" xml:space="preserve">
+    <value>يجب أن تمتلك جميع الأدوار التالية: {0}.</value>
+  </data>
+  <data name="AuthKit.Auth.RoleRequiredAny" xml:space="preserve">
+    <value>يجب أن تمتلك أحد الأدوار التالية: {0}.</value>
+  </data>
+  <data name="AuthKit.Auth.SocialProviderNotSupported" xml:space="preserve">
+    <value>مزود تسجيل الدخول الاجتماعي '{0}' غير مدعوم.</value>
+  </data>
   <data name="hello" xml:space="preserve">
     <value>اهلا</value>
   </data>

@@ -1,6 +1,8 @@
 using AuthKit;
+using AuthKit.Contracts;
 using AuthKit.DI;
 using AuthKitTest.Api.Auth;
+using AuthKitTest.Api.Auth.localization;
 using AuthKitTest.Api.Auth.Portals;
 using AuthKitTest.Api.Data;
 using AuthKitTest.Api.Models;
@@ -47,6 +49,8 @@ builder.Services
 builder.Services.AddSingleton<AdminPortalPolicy>();
 builder.Services.AddSingleton<CompanyPortalPolicy>();
 builder.Services.AddSingleton<VendorPortalPolicy>();
+
+builder.Services.AddScoped<IAuthMessageLocalizer, AuthLocalizer>();
 
 // 5. Register DbContext
 builder.Services.AddDbContext<AppDbContext>(opt =>
@@ -97,8 +101,8 @@ app.UseHttpsRedirection();
 // 5. UseLocalizationKit BEFORE UseAuthKit/UseAuthorization
 
 // 6. UseAuthKit BEFORE UseAuthorization
-app.UseAuthKit();
 app.UseLocalizationKit();
+app.UseAuthKit();
 app.UseAuthorization();
 
 // 7. Migrate DB and seed on startup

@@ -21,23 +21,15 @@ public class CompanyAuthController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> Login([FromBody] CompanyLoginModel model, CancellationToken ct)
     {
-        try
-        {
-            var result = await _auth.LoginAsync(model, "company", ct);
+       
             var mssg = _loc.T("hello");
+            var result = await _auth.LoginAsync(model, "company", ct);
             return Ok(new
             {
                 mssg=mssg
             });
-        }
-        catch (Exception ex)
-        {
-
-            return BadRequest(new
-            {
-                error = ex.Message
-            });
-        }
+       
+      
       
     }
 

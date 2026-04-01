@@ -19,7 +19,7 @@ namespace AuthKitTest.Api.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -57,6 +57,123 @@ namespace AuthKitTest.Api.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid credentials.
+        /// </summary>
+        public static string AuthKit_Auth_InvalidCredentials {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.InvalidCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The email or password provided is incorrect.
+        /// </summary>
+        public static string AuthKit_Auth_InvalidCredentialsDetails {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.InvalidCredentialsDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permission &apos;{0}&apos; is required to access this resource..
+        /// </summary>
+        public static string AuthKit_Auth_PermissionRequired {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.PermissionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This resource is only accessible from the &apos;{0}&apos; portal..
+        /// </summary>
+        public static string AuthKit_Auth_PortalAccessRestricted {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.PortalAccessRestricted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Portal &apos;{0}&apos; is not configured..
+        /// </summary>
+        public static string AuthKit_Auth_PortalNotConfigured {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.PortalNotConfigured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your account does not have the required permissions to access this portal..
+        /// </summary>
+        public static string AuthKit_Auth_PortalPermissionNotAllowed {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.PortalPermissionNotAllowed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your account does not have the required role to access this portal..
+        /// </summary>
+        public static string AuthKit_Auth_PortalRoleNotAllowed {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.PortalRoleNotAllowed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The refresh token has expired..
+        /// </summary>
+        public static string AuthKit_Auth_RefreshTokenExpired {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.RefreshTokenExpired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The refresh token is invalid..
+        /// </summary>
+        public static string AuthKit_Auth_RefreshTokenInvalid {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.RefreshTokenInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The refresh token has been revoked..
+        /// </summary>
+        public static string AuthKit_Auth_RefreshTokenRevoked {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.RefreshTokenRevoked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requires all of the following roles: {0}..
+        /// </summary>
+        public static string AuthKit_Auth_RoleRequiredAll {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.RoleRequiredAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Requires one of the following roles: {0}..
+        /// </summary>
+        public static string AuthKit_Auth_RoleRequiredAny {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.RoleRequiredAny", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Social login provider &apos;{0}&apos; is not supported..
+        /// </summary>
+        public static string AuthKit_Auth_SocialProviderNotSupported {
+            get {
+                return ResourceManager.GetString("AuthKit.Auth.SocialProviderNotSupported", resourceCulture);
             }
         }
         

@@ -117,6 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AuthKit.Auth.InvalidCredentials" xml:space="preserve">
+    <value>Invalid credentials</value>
+  </data>
+  <data name="AuthKit.Auth.InvalidCredentialsDetails" xml:space="preserve">
+    <value>The email or password provided is incorrect</value>
+  </data>
+  <data name="AuthKit.Auth.PermissionRequired" xml:space="preserve">
+    <value>Permission '{0}' is required to access this resource.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalAccessRestricted" xml:space="preserve">
+    <value>This resource is only accessible from the '{0}' portal.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalNotConfigured" xml:space="preserve">
+    <value>Portal '{0}' is not configured.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalPermissionNotAllowed" xml:space="preserve">
+    <value>Your account does not have the required permissions to access this portal.</value>
+  </data>
+  <data name="AuthKit.Auth.PortalRoleNotAllowed" xml:space="preserve">
+    <value>Your account does not have the required role to access this portal.</value>
+  </data>
+  <data name="AuthKit.Auth.RefreshTokenExpired" xml:space="preserve">
+    <value>The refresh token has expired.</value>
+  </data>
+  <data name="AuthKit.Auth.RefreshTokenInvalid" xml:space="preserve">
+    <value>The refresh token is invalid.</value>
+  </data>
+  <data name="AuthKit.Auth.RefreshTokenRevoked" xml:space="preserve">
+    <value>The refresh token has been revoked.</value>
+  </data>
+  <data name="AuthKit.Auth.RoleRequiredAll" xml:space="preserve">
+    <value>Requires all of the following roles: {0}.</value>
+  </data>
+  <data name="AuthKit.Auth.RoleRequiredAny" xml:space="preserve">
+    <value>Requires one of the following roles: {0}.</value>
+  </data>
+  <data name="AuthKit.Auth.SocialProviderNotSupported" xml:space="preserve">
+    <value>Social login provider '{0}' is not supported.</value>
+  </data>
   <data name="hello" xml:space="preserve">
     <value>hiii</value>
   </data>
