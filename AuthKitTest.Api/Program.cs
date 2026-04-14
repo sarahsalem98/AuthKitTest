@@ -8,7 +8,7 @@ using AuthKitTest.Api.Data;
 using AuthKitTest.Api.Models;
 using AuthKitTest.Api.Resources;
 using Microsoft.EntityFrameworkCore;
-using SharedLocalization.Extensions;
+using LocalizationKit.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -8,16 +8,15 @@
 
 
   <ItemGroup>
-    <!--<PackageReference Include="AuthKit" Version="4.0.0" />-->
+
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-    <!--<PackageReference Include="LocalizationKit" Version="9.0.1" />-->
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="SSolutions.AuthKit" Version="4.0.0" />
-    <PackageReference Include="SSolutions.LocalizationKit" Version="9.0.4" />
+    <PackageReference Include="SSolutions.AuthKit" Version="1.0.0" />
+    <PackageReference Include="SSolutions.LocalizationKit" Version="1.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 

@@ -1,5 +1,5 @@
 ﻿using AuthKit.Contracts;
-using SharedLocalization.Services;
+using LocalizationKit.Services;
 namespace AuthKitTest.Api.Auth.localization
 {
     public class AuthLocalizer : IAuthMessageLocalizer

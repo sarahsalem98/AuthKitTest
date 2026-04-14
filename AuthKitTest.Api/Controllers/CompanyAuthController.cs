@@ -3,7 +3,7 @@ using AuthKit.Services;
 using AuthKitTest.Api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using SharedLocalization.Services;
+using LocalizationKit.Services;
 
 namespace AuthKitTest.Api.Controllers;
 
